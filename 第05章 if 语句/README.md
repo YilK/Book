@@ -2,7 +2,7 @@
 
 #### 检查特定的值是否包含在列表中
 
-​	要判断特定的值是否包含在列表中，可使用关键字 ==in== 。
+​	要判断特定的值是否包含在列表中，可使用关键字 **in** 。
 
 ```python
 requested_toppings = ['mushrooms', 'onions', 'pineapple']
