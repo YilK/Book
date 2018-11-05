@@ -47,7 +47,7 @@ dict_keys(['username', 'age', 'IQ'])
 
 
 
-3. #### 遍历字典中所有的值
+3. #### 遍历字典中所有的值 ：dict.values()
 
 ```python
 user = {
