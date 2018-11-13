@@ -1,0 +1,4 @@
+In Python you can,操作列表
+In Python you can,操作字典
+In Python you can,编写函数
+In Python you can,编写类
