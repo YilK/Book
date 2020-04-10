@@ -12,13 +12,7 @@
 
 ## 1.2	变量与计算
 
-#### 	输入
-
-```
-
-```
-
-
+#### 	输入-
 
 ```java
 		Scanner in =new Scanner(System.in);
