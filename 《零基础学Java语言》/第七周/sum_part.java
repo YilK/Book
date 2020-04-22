@@ -13,7 +13,7 @@ public class sum_part {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in=new Scanner(System.in);
-		int n;//ÓĞ¼¸×éÊı¾İ
+		int n;//å®šä¹‰ä¸€ä¸ªå˜é‡
 		n=in.nextInt();
 		int a,b;
 		for(int i=1;i<=n;i++)
