@@ -1,14 +1,13 @@
 #include <iostream>
 
 using namespace std;
-void count()
+void change(int &i)
 {
-	static int n=0;
-	n++;
-	cout<<n<<endl;
+	i++;
 }
 int main(int argc, char *argv[]) {
-	for(int i=1;i<=3;i++)
-		count()<<endl;
+	int a=10;
+	change(a);
+	cout<<a<<endl;
 	return 0;
 }
