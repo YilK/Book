@@ -94,7 +94,7 @@ $ rosservice call clear //因为clear的服务类型是空的所以不需要带�
 $ rosservice type spawn
 turtlesim/Spawn
 
-$ rosservice type spawn| rossrv show
+$ rosservice type spawn | rossrv show
 
 float32 x     //以下是参数
 float32 y
