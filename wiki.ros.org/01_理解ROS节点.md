@@ -22,6 +22,8 @@
 
 ​		如`rosnode info /rosout`返回有关于rosout的信息。
 
+​	` rosnode cleanup` 停止节点。
+
 ### 4.rosrun
 
 ​	`rosrun`允许用户使用包名直接运行一个包内的节点（不需要知道包的路径）。
