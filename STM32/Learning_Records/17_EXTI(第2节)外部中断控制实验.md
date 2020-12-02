@@ -63,11 +63,41 @@
    2. 函数的名称应该怎么写，在启动文件`startup_stm32f10x_hd.s`找到对应的函数名。
 
       ```c
+      void EXTI0_IRQHandler (void)
+      {
+      	if(EXTI_GetITStatus(EXTI_Line0) != RESET)////确保是否产生了 EXTI Line 中断
+      	{
+      		LED_G_TOGGLE;
+              EXTI_ClearITPendingBit(EXTI_Line0);//清除中断标志位
+      	}
+      }
       
       ```
 
 6. main函数
 
    ```C
+   #include "stm32f10x.h"   // 相当于51单片机中的  #include <reg51.h>
+   #include "bsp_led.h"
    
+   #include "bsp_exti.h"
+   
+   void Delay( uint32_t count )
+   {
+   	for(; count!=0; count--);
+   }
+   
+   int main(void)
+   {
+   	// 来到这里的时候，系统的时钟已经被配置成72M。
+   	LED_GPIO_Config();
+   	
+   	EXIT_Key_Config();
+   
+   	while(1)
+   	{
+   
+   	}
+   }
    ```
+
